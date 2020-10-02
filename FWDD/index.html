@@ -9,9 +9,21 @@
   <link rel="icon" href="E:/wamp/www/assigment/img/9.jpg" type="image/jpg" sizes="16x16">
   <title>Home Page</title>
   <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <!-- Style for tab UI -->
-  <link href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+  <style>
+    #main-content{
+      background-color:#e9ecef;
+      min-height: 100vh;
+    }
+    .card img{
+      max-height: 250px;
+      min-height: 250px;
+      height:250px;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -46,115 +58,126 @@
       </form>
     </div>
   </nav>
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image:url('img/1.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>MADRID FOOTBALL </h3>
-          <p>Madrid is home to La Liga football club giant Real Madrid, who play their home games at the Santiago Bernabéu. Their supporters are referred to as Madridistas or Merengues (Meringues). Real Madrid was voted by fans as the best club of the 20th century (FIFA Club of the Century), being the current leader of the European teams ranking and the most valuable sports team in the world. Real Madrid have won the European Cup (UEFA Champions League) a record 13 times. The latest of their 33 La Liga titles came in 2017.Their successful hometown rivals, Atlético Madrid, are also well-supported in the city and play their home games at the Wanda Metropolitano. Their supporters are referred to as Atléticos or Colchoneros (The Mattressers), in reference to the team's red and white jersey colours.[1] Atlético is considered a European elite team, having reached in the last five seasons, two UEFA Champions League finals. Historically, Atletico has won 10 national league titles and 10 national cup titles.</p>
-        </div>
+  <div class="container-fluid" id="main-content">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav aria-label="breadcrumb"  style="background-color:#e9edef;">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page"><i style="line-height: 1.5;" class="fas fa-home"></i> Home</li>
+          </ol>
+        </nav>        
       </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image:url('file:///E:/wamp/www/assigment/img/2.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Lakers</h3>
-          <p>The Los Angeles Lakers are an American professional basketball team based in Los Angeles. The Lakers compete in the National Basketball Association (NBA), as a member of the league's Western Conference in the Pacific Division. The Lakers play their home games at Staples Center, an arena shared with the NBA's Los Angeles Clippers, the Los Angeles Sparks of the Women's National Basketball Association, and the Los Angeles Kings of the National Hockey League.[9] The Lakers are one of the most successful teams in the history of the NBA, and have won 16 NBA championships, the second-most behind the Boston Celtics.</p>
+        <div class="col-lg-12 my-0 mx-10">
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+              <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+              <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="row">
+                <div class="col-4">
+                  <div class="card" style="width: 100%;">
+                    <div class="card-img-top">
+                      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://th.bing.com/th/id/OIP.P031S8_cLetdEuv_JWHTdgHaEo?w=275&h=180&c=7&o=5&dpr=1.1&pid=1.7" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="https://th.bing.com/th/id/OIP.2FN7zaLxKLHEtjXbfvnNEgHaEl?w=284&h=180&c=7&o=5&dpr=1.1&pid=1.7" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="file:///D:/GitHub%20Repository/APU-Modules-Rebuild/FDD&WDD/educ_WDD/assets/images/page-banner.png" alt="Third slide">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card" style="width: 100%;">
+                    <img class="card-img-top" src="file:///D:/GitHub%20Repository/APU-Modules-Rebuild/FDD&WDD/educ_WDD/assets/images/page-banner.png" alt="Card image cap">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-danger float-right" onclick="deleteCard(this);" style="position: relative;">Delete</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="card" style="width: 100%;">
+                    <div class="card-img-top">
+                      <img class="card-img-top" src="file:///D:/GitHub%20Repository/APU-Modules-Rebuild/FDD&WDD/educ_WDD/assets/images/page-banner.png" onclick="playVideoInModel('https://www.youtube.com/embed/cKkXtyjleX4');" style="cursor:pointer;" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-danger float-right" onclick="deleteCard(this);" style="position: relative;">Delete</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="file:///D:/GitHub%20Repository/APU-Modules-Rebuild/FDD&WDD/educ_WDD/assets/images/page-banner.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-home-tab">
+              <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="file:///D:/GitHub%20Repository/APU-Modules-Rebuild/FDD&WDD/educ_WDD/assets/images/page-banner.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('file:///E:/wamp/www/assigment/img/3.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h3>Seattle Mariners</h3>
-          <p>The Seattle Mariners are an American professional baseball team based in Seattle, Washington. The Mariners compete in Major League Baseball as a member club of the American League West Division. The team joined the American League as an expansion team in 1977 playing their home games in the Kingdome</p>
-        </div>
-      </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-
-  <!-- Page Content -->
-  <section class="py-5">
-    <div class="container"> 
-      <div id="tabs">
-        <ul>
-          <li><a href="#tab1" title="about company">NBA</a></li>
-          <li><a href="#tab2" title="list of services">MLB</a></li>
-          <li><a href="#tab3" title="list of facilities">Premier League</a></li>
-        </ul>
-        <div id="tab1">
-          <p>NBA's Best Ball Fakes <span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            2018 NBA All-Star Game &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-            LeBron James vs Kobe Bryant</span></p> 
-          <video width="320" height="240" controls>
-            <source src="video/1.mp4" type="video/mp4">
-            <source src="video/1.ogg" type="video/ogg">
-          </video>
-          <video width="320" height="240" controls>
-            <source src="video/2.mp4" type="video/mp4">
-            <source src="video/2.ogg" type="video/ogg">
-          </video>
-          <video width="320" height="240" controls>
-            <source src="video/3.mp4" type="video/mp4">
-            <source src="video/3.ogg" type="video/ogg">
-          </video>
+  <div class="modal bd-example-modal-lg" tabindex="-1" role="dialog">
+    <div class="modal-dialog  modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-      <div id="tab2">
-        <p><span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    </span>MLB Yankee <span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    7 interesting fake actions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    TOP 10&nbsp;&nbsp;&nbsp; </span></p>
-        <video width="320" height="240" controls>
-          <source src="video/4.mp4" type="video/mp4">
-          <source src="video/4.ogg" type="video/ogg">
-        </video>
-        <video width="320" height="240" controls>
-          <source src="video/5.mp4" type="video/mp4">
-          <source src="video/5.ogg" type="video/ogg">
-        </video>
-        <video width="320" height="240" controls>
-          <source src="video/6.mp4" type="video/mp4">
-          <source src="video/6.ogg" type="video/ogg">
-        </video>
-      </div>
-      <div id="tab3">
-        <p>Liverpool Premier League goals<span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-    Cardiff City 0:5 Manchester City&nbsp;&nbsp;&nbsp;&nbsp; NISSAN GOAL 
-    OF THE SEASON</span></p>
-        <video width="320" height="240" controls>
-            <source src="video/7.mp4" type="video/mp4">
-            <source src="video/7.ogg" type="video/ogg">
-        </video>
-        <video width="320" height="240" controls>
-          <source src="video/8.mp4" type="video/mp4">
-          <source src="video/8.ogg" type="video/ogg">
-        </video>
-        <video width="320" height="240" controls>
-          <source src="video/9.mp4" type="video/mp4">
-          <source src="video/9.ogg" type="video/ogg">
-        </video>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="btn-submit" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
-    </div>
-  </section>
-
+  </div>
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <footer style="opacity:0.5" class="py-5 bg-light sticky-bottom">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; MZY Demo 2019</p>
+      <p class="m-0 text-center">Copyright &copy; MZY Demo 2019</p>
     </div>
   </footer>
 
@@ -165,9 +188,8 @@
 
   <script src="jquery.min.js"></script>
   <script src="bootstrap.bundle.min.js"></script>
-  <!-- Js for tab -->
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="js/util.js"></script>
 	<script>
 		$(document).ready(function() {
 			$("#tabs").tabs();
