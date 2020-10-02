@@ -1,107 +1,104 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="E:/wamp/www/assigment/img/9.jpg" type="image/jpg" sizes="16x16">
-    <title>Home page</title>
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="half-slider.css" rel="stylesheet">
-    <!-- Style for tab UI -->
-    <link href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="E:/wamp/www/assigment/img/9.jpg" type="image/jpg" sizes="16x16">
+  <title>Home Page</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Style for tab UI -->
+  <link href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+</head>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">MZY</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="news.html">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="register.html">Register</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="search.html">Login</a>
-            </li>
-          </ul>
+<body>
+  <!-- Navigation Bar, Copied from bootstrap: https://getbootstrap.com/docs/4.5/components/navbar/-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Fang</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="news.html">News<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Login2.html">Login</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="register.html">Register</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image:url('img/1.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>MADRID FOOTBALL </h3>
+          <p>Madrid is home to La Liga football club giant Real Madrid, who play their home games at the Santiago Bernabéu. Their supporters are referred to as Madridistas or Merengues (Meringues). Real Madrid was voted by fans as the best club of the 20th century (FIFA Club of the Century), being the current leader of the European teams ranking and the most valuable sports team in the world. Real Madrid have won the European Cup (UEFA Champions League) a record 13 times. The latest of their 33 La Liga titles came in 2017.Their successful hometown rivals, Atlético Madrid, are also well-supported in the city and play their home games at the Wanda Metropolitano. Their supporters are referred to as Atléticos or Colchoneros (The Mattressers), in reference to the team's red and white jersey colours.[1] Atlético is considered a European elite team, having reached in the last five seasons, two UEFA Champions League finals. Historically, Atletico has won 10 national league titles and 10 national cup titles.</p>
         </div>
       </div>
-    </nav>
-
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image:url('img/1.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>MADRID FOOTBALL </h3>
-              <p>Madrid is home to La Liga football club giant Real Madrid, who play their home games at the Santiago Bernabéu. Their supporters are referred to as Madridistas or Merengues (Meringues). Real Madrid was voted by fans as the best club of the 20th century (FIFA Club of the Century), being the current leader of the European teams ranking and the most valuable sports team in the world. Real Madrid have won the European Cup (UEFA Champions League) a record 13 times. The latest of their 33 La Liga titles came in 2017.Their successful hometown rivals, Atlético Madrid, are also well-supported in the city and play their home games at the Wanda Metropolitano. Their supporters are referred to as Atléticos or Colchoneros (The Mattressers), in reference to the team's red and white jersey colours.[1] Atlético is considered a European elite team, having reached in the last five seasons, two UEFA Champions League finals. Historically, Atletico has won 10 national league titles and 10 national cup titles.</p>
-            </div>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image:url('file:///E:/wamp/www/assigment/img/2.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Lakers</h3>
-              <p>The Los Angeles Lakers are an American professional basketball team based in Los Angeles. The Lakers compete in the National Basketball Association (NBA), as a member of the league's Western Conference in the Pacific Division. The Lakers play their home games at Staples Center, an arena shared with the NBA's Los Angeles Clippers, the Los Angeles Sparks of the Women's National Basketball Association, and the Los Angeles Kings of the National Hockey League.[9] The Lakers are one of the most successful teams in the history of the NBA, and have won 16 NBA championships, the second-most behind the Boston Celtics.</p>
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('file:///E:/wamp/www/assigment/img/3.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Seattle Mariners</h3>
-              <p>The Seattle Mariners are an American professional baseball team based in Seattle, Washington. The Mariners compete in Major League Baseball as a member club of the American League West Division. The team joined the American League as an expansion team in 1977 playing their home games in the Kingdome</p>
-            </div>
-          </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image:url('file:///E:/wamp/www/assigment/img/2.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Lakers</h3>
+          <p>The Los Angeles Lakers are an American professional basketball team based in Los Angeles. The Lakers compete in the National Basketball Association (NBA), as a member of the league's Western Conference in the Pacific Division. The Lakers play their home games at Staples Center, an arena shared with the NBA's Los Angeles Clippers, the Los Angeles Sparks of the Women's National Basketball Association, and the Los Angeles Kings of the National Hockey League.[9] The Lakers are one of the most successful teams in the history of the NBA, and have won 16 NBA championships, the second-most behind the Boston Celtics.</p>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
-    </header>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('file:///E:/wamp/www/assigment/img/3.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Seattle Mariners</h3>
+          <p>The Seattle Mariners are an American professional baseball team based in Seattle, Washington. The Mariners compete in Major League Baseball as a member club of the American League West Division. The team joined the American League as an expansion team in 1977 playing their home games in the Kingdome</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-    <!-- Page Content -->
-    <section class="py-5">
-      <div class="container"> 
-        <div id="tabs">
-      	<ul>
-      		<li><a href="#tab1" title="about company">NBA</a></li>
-      		<li><a href="#tab2" title="list of services">MLB</a></li>
-      		<li><a href="#tab3" title="list of facilities">Premier League</a></li>
-      	</ul>
-      	<div id="tab1">
-      		<p>NBA's Best Ball Fakes <span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-			       2018 NBA All-Star Game &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-		         LeBron James vs Kobe Bryant</span></p> 
+  <!-- Page Content -->
+  <section class="py-5">
+    <div class="container"> 
+      <div id="tabs">
+        <ul>
+          <li><a href="#tab1" title="about company">NBA</a></li>
+          <li><a href="#tab2" title="list of services">MLB</a></li>
+          <li><a href="#tab3" title="list of facilities">Premier League</a></li>
+        </ul>
+        <div id="tab1">
+          <p>NBA's Best Ball Fakes <span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            2018 NBA All-Star Game &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            LeBron James vs Kobe Bryant</span></p> 
           <video width="320" height="240" controls>
             <source src="video/1.mp4" type="video/mp4">
             <source src="video/1.ogg" type="video/ogg">
@@ -114,65 +111,68 @@
             <source src="video/3.mp4" type="video/mp4">
             <source src="video/3.ogg" type="video/ogg">
           </video>
-      	</div>
-      	<div id="tab2">
-      		<p><span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			</span>MLB Yankee <span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-			7 interesting fake actions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-			TOP 10&nbsp;&nbsp;&nbsp; </span></p>
-          <video width="320" height="240" controls>
-            <source src="video/4.mp4" type="video/mp4">
-            <source src="video/4.ogg" type="video/ogg">
-          </video>
-          <video width="320" height="240" controls>
-            <source src="video/5.mp4" type="video/mp4">
-            <source src="video/5.ogg" type="video/ogg">
-          </video>
-          <video width="320" height="240" controls>
-            <source src="video/6.mp4" type="video/mp4">
-            <source src="video/6.ogg" type="video/ogg">
-          </video>
-      	</div>
-      	<div id="tab3">
-      		<p>Liverpool Premier League goals<span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-			Cardiff City 0:5 Manchester City&nbsp;&nbsp;&nbsp;&nbsp; NISSAN GOAL 
-			OF THE SEASON</span></p>
-      		<video width="320" height="240" controls>
-             <source src="video/7.mp4" type="video/mp4">
-             <source src="video/7.ogg" type="video/ogg">
-          </video>
-          <video width="320" height="240" controls>
-            <source src="video/8.mp4" type="video/mp4">
-            <source src="video/8.ogg" type="video/ogg">
-          </video>
-          <video width="320" height="240" controls>
-            <source src="video/9.mp4" type="video/mp4">
-            <source src="video/9.ogg" type="video/ogg">
-          </video>
-      	</div>
+        </div>
+      <div id="tab2">
+        <p><span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </span>MLB Yankee <span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    7 interesting fake actions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    TOP 10&nbsp;&nbsp;&nbsp; </span></p>
+        <video width="320" height="240" controls>
+          <source src="video/4.mp4" type="video/mp4">
+          <source src="video/4.ogg" type="video/ogg">
+        </video>
+        <video width="320" height="240" controls>
+          <source src="video/5.mp4" type="video/mp4">
+          <source src="video/5.ogg" type="video/ogg">
+        </video>
+        <video width="320" height="240" controls>
+          <source src="video/6.mp4" type="video/mp4">
+          <source src="video/6.ogg" type="video/ogg">
+        </video>
       </div>
-     </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; MZY Demo 2019</p>
+      <div id="tab3">
+        <p>Liverpool Premier League goals<span lang="zh-cn">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    Cardiff City 0:5 Manchester City&nbsp;&nbsp;&nbsp;&nbsp; NISSAN GOAL 
+    OF THE SEASON</span></p>
+        <video width="320" height="240" controls>
+            <source src="video/7.mp4" type="video/mp4">
+            <source src="video/7.ogg" type="video/ogg">
+        </video>
+        <video width="320" height="240" controls>
+          <source src="video/8.mp4" type="video/mp4">
+          <source src="video/8.ogg" type="video/ogg">
+        </video>
+        <video width="320" height="240" controls>
+          <source src="video/9.mp4" type="video/mp4">
+          <source src="video/9.ogg" type="video/ogg">
+        </video>
       </div>
-      <!-- /.container -->
-    </footer>
+    </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.bundle.min.js"></script>
-    <!-- Js for tab -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; MZY Demo 2019</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+  <!-- Js for tab -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     
 	<script>
 		$(document).ready(function() {
 			$("#tabs").tabs();
 		});
-	</script>
+  </script>
+  
 </body>
-
 </html>
