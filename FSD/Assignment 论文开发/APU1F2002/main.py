@@ -2,38 +2,41 @@
 # TP059887
 import csv,os,time
 from functions import *
+import time
 
 def main():
-    zone1=['A','B','C','D'] 
+    zone1=['A','B','C','D'] # initialize list variable zone1, group1 and tt in local scope
     group1=['ATO','ACC','AEO','SID','AHS']
     tt=['T1','T2','T3']
-    print('Welcome to use COVID19 management system Please login')
-    p=True;
-    while p:
-        pwd=int(input('enter password:'))
-        if pwd==123:
-            p=False
-            print('welcome root')
+    print('Welcome to use COVID-19 management system Please login')
+    while True:
+        pwd = int(input('enter password:'))
+        if pwd == 123: # password for root user is 123
+            break
             time.sleep(1)
-            os.system('cls')
+            print('welcome root')
+            os.system('cls') # os module to clear the screen
         else:
-            print('wrong password')
+            print('invalid password, pls enter password again')
+            continue
 
-    data = []
+    data = [] #initialize empty data list
+    temp_data = []
+
     f = open('patient_data.txt', 'w', newline='')
-    writer = csv.writer(f)
-    # writer.writerow(['id','name', 'phone', 'mail', 'zone', 'group','testTimes', 'height','confirmed'])
+    writer = csv.writer(f) # writer.writerow(['id','name', 'phone', 'mail', 'zone', 'group','testTimes', 'height','confirmed'])
     f.close()
 
     f = open('record_data.txt', 'w', newline='')
-    writer = csv.writer(f)
-    # writer.writerow(['id','test_period','ends','zone','group'])
+    writer = csv.writer(f) # writer.writerow(['id','test_period','ends','zone','group'])
     f.close()
+
     f = open('confirmed_data.txt', 'w', newline='')
     writer = csv.writer(f)
     f.close()
-    temp_data = []
-    operation = menu()
+    
+    operation = menu() # the numeric selection for menu
+    
     while (operation != '0'):
         if operation == '1':
             id = get_rol()

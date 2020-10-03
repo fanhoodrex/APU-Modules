@@ -63,12 +63,3 @@ while keep:
         continue
     if sec==5:
         keep=False
-
-
-
-
-
-    
-
-    
-

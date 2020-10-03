@@ -280,14 +280,15 @@ def findname(id):
     return 0
 
 def menu():
-    operation = input('''please input operat
+    operation = input('''
         1: insert values 
         2: get ends
         3: Set the patients condition
         4: The test statistics
         5: What to search
-        0: exit 
-        ''')
+        0: exit
+
+        Please input selection:''')
     return operation
 
 def menu1():
