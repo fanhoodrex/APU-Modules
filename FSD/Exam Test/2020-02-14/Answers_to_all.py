@@ -111,4 +111,3 @@ This do exactly same as mystery() in steps above, instead it comes with differen
 passed in: t = ['Assignment', 'Project']; a = -1 ; b = 0 and the last parameter c is not provided, 
 Unlike the default parameters given in mystery()
 """
-
