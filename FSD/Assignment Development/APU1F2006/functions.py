@@ -1,5 +1,17 @@
 import time
 
+def menu():
+    """function for displaying the menu"""
+    print("Hello, This is the menu of UTOMOBILE PARTS INVENTORY MANAGEMENT SYSTEM")
+    time.sleep(1)
+    print("""
+    1.Parts Inventory Creation in Warehouses
+    2.Parts Inventory Update
+    3.Parts Inventory Tracking
+    4.Searching Functionalities
+    """)
+    return None
+
 def update():
     """update the quantity of parts in warehouse"""
     pass
@@ -38,6 +50,8 @@ def Warehouses_CodeList():
             print("Sorry, there should be at least 3 warehouses")
             time.sleep(1)
             continue
+    time.sleep(1)
+    print(f"Successfully create all warehouses:{list_warehouse}")
     return list_warehouse
 
 
@@ -51,18 +65,6 @@ def Part():
     part_details['initial_quantity'] = int(input("How much is the initial quantity for this part?:")) # assign the initial quantity key/value for part dict
     part_details['supplier'] = input("Enter the supplier for this part, leave space if supplier is excluded:") # assign the supplier key/value for part dict
     
-
-    print(AssemblySections_CodeList)
-    while True: # while loop for selecting those assembly sections with which the each part are supplied 
-        section_input = input("What assambly sections is this part supplied with, Enter 0 to finish:")
-        if section_input == str(0):
-            break
-        else:
-            assembly_key.append(section_input)
-            continue
-            time.sleep(1)
-    part_details['assembly section'] = assembly_key # assign the assembly sections as value to the assembly section key in part dict
-
     while True: # while loop for selecting those warehouses with which the each part are supplied 
         print(Warehouses_CodeList)
         ware_input = input("What warehouses is this part under? Enter 0 to finish:")
@@ -73,7 +75,18 @@ def Part():
             continue
             time.sleep(1)
     part_details['warehouse'] = warehouse_key # assign the warehouse list as value to the warehosue key in part dict
-    
+
+    while True: # while loop for selecting those assembly sections with which the each part are supplied 
+        print(AssemblySections_CodeList)
+        section_input = input("What assambly sections is this part supplied with, Enter 0 to finish:")
+        if section_input == str(0):
+            break
+        else:
+            assembly_key.append(section_input)
+            continue
+            time.sleep(1)
+    part_details['assembly section'] = assembly_key # assign the assembly sections as value to the assembly section key in part dict
+
     time.sleep(1)
     print(f"Successfully created a single part, shown as below\n{part_details}")
     return part_details
