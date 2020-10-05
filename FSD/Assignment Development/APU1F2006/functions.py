@@ -9,6 +9,7 @@ def menu():
     2.Parts Inventory Update
     3.Parts Inventory Tracking
     4.Searching Functionalities
+    5.Exit
     """)
     return None
 
@@ -88,5 +89,7 @@ def Part():
     part_details['assembly section'] = assembly_key # assign the assembly sections as value to the assembly section key in part dict
 
     time.sleep(1)
-    print(f"Successfully created a single part, shown as below\n{part_details}")
+    print(f"""Successfully created a single part, shown as below
+-----------------------------------------------------------------
+{part_details}""") # use f-string with triple quotation
     return part_details
